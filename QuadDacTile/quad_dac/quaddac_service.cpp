@@ -22,11 +22,6 @@
 
 #include "quaddac_service.h"
 
-#define AUDIO_PLATFORM_INFO_PATH "/vendor/etc/audio_platform_info.xml"
-#define AUDIO_PLATFORM_INFO_QDAC_FILE "/vendor/etc/audio_platform_info-quad_dac.xml"
-#define MIXER_PATHS_TASHA_PATH "/vendor/etc/mixer_paths_tasha.xml"
-#define MIXED_PATHS_TASHA_QDAC_FILE "/vendor/etc/mixer_paths_tasha-quad_dac.xml"
-
 namespace aidl {
 namespace org {
 namespace lineageos {
@@ -46,14 +41,12 @@ void QuadDacService::Register() {
 
 ndk::ScopedAStatus QuadDacService::setEnabled(bool enabled) {
     if (enabled) {
-        mount(AUDIO_PLATFORM_INFO_QDAC_FILE, AUDIO_PLATFORM_INFO_PATH, NULL, MS_RDONLY | MS_BIND, NULL);
-        mount(MIXED_PATHS_TASHA_QDAC_FILE, MIXER_PATHS_TASHA_PATH, NULL, MS_RDONLY | MS_BIND, NULL);
+        android::base::SetProperty("persist.audio.hifi.enabled", "true");
     } else {
-        umount(AUDIO_PLATFORM_INFO_PATH);
-        umount(MIXER_PATHS_TASHA_PATH);
+        android::base::SetProperty("persist.audio.hifi.enabled", "false");
     }
 
-    android::base::SetProperty("ctl.restart", "audioserver");
+    //android::base::SetProperty("ctl.restart", "audioserver"); Causes lag and soft reboots. 
 
     return ndk::ScopedAStatus::ok();
 }
