@@ -39,8 +39,6 @@ TARGET_SCREEN_WIDTH := 1440
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_platform_info-quad_dac.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info-quad_dac.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_tasha-quad_dac.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tasha-quad_dac.xml \
     $(LOCAL_PATH)/audio/mixer_paths_tasha.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tasha.xml
 
 # Camera
@@ -50,6 +48,11 @@ PRODUCT_PACKAGES += \
 # Cutout
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_hide_display_cutout=true
+    
+# DAC
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.audio.ess.supported=true
+
 
 # Fingerprint
 PRODUCT_PACKAGES += \
