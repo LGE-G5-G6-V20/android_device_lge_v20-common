@@ -24,6 +24,7 @@ import android.media.AudioManager
 import android.os.ServiceManager
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
+import android.widget.Toast
 
 class QuadDacTile : TileService() {
 
@@ -55,6 +56,7 @@ class QuadDacTile : TileService() {
         val enabled = !Utils.getQuadDacEnabled(mSharedPreferences)
         Utils.setQuadDacEnabled(mSharedPreferences, enabled)
         updateTile(true, enabled)
+        notify("Please disconnect and reconnect any audio devices")
     }
 
     fun updateTile(available: Boolean, enabled: Boolean) {
@@ -66,6 +68,12 @@ class QuadDacTile : TileService() {
             qsTile.label = getString(R.string.tile_label_unavailable)
         }
         qsTile.updateTile()
+    }
+    
+    fun notify(text: String) {
+	val duration = Toast.LENGTH_LONG
+	val toast = Toast.makeText(applicationContext, text, duration)
+	toast.show()
     }
 
     inner class HeadsetPluggedReceiver : BroadcastReceiver() {
