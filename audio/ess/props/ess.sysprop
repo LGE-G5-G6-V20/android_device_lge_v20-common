@@ -14,3 +14,10 @@ prop {
     scope: Public
     access: ReadWrite
 }
+prop {
+    api_name: "hifi_advanced"
+    type: Boolean
+    prop_name: "persist.audio.hifi.advanced"
+    scope: Public
+    access: ReadWrite
+}
