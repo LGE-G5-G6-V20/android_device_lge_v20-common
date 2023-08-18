@@ -3207,6 +3207,12 @@
         <ctl name="Es9018 AVC Volume" value="1" />
         <ctl name="Es9018 HEADSET TYPE" value="2" />
     </path>
+    
+    <path name="ess-headphones-hifi-aux">
+    	<ctl name="Es9018 Master Volume" value="0" />
+        <ctl name="Es9018 AVC Volume" value="7" />
+        <ctl name="Es9018 HEADSET TYPE" value="3" />
+    </path>
 
     <path name="bt-sco-and-speaker">
         <ctl name="SLIM_0_RX SampleRate" value="KHZ_8" />
