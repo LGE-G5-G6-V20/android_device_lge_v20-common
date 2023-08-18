@@ -52,8 +52,11 @@ PRODUCT_PACKAGES += \
 # Cutout
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_hide_display_cutout=true
-    
+
 # DAC
+PRODUCT_PACKAGES += \
+    QuadDACPanel
+
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.audio.ess.supported=true
 
@@ -73,11 +76,6 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
-
-# Quad DAC
-PRODUCT_PACKAGES += \
-    quad_dac \
-    QuadDacTile
 
 # Security Patch Level
 PRODUCT_PROPERTY_OVERRIDES += \
