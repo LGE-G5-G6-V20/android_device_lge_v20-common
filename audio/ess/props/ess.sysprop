@@ -7,17 +7,3 @@ prop {
     scope: Public
     access: Readonly
 }
-prop {
-    api_name: "hifi_status"
-    type: Boolean
-    prop_name: "persist.audio.hifi.enabled"
-    scope: Public
-    access: ReadWrite
-}
-prop {
-    api_name: "ess_mode"
-    type: Integer
-    prop_name: "persist.audio.ess.mode"
-    scope: Public
-    access: ReadWrite
-}
