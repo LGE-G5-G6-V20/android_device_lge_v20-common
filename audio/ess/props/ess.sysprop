@@ -7,3 +7,11 @@ prop {
     scope: Public
     access: Readonly
 }
+
+prop {
+    api_name: "ess_status"
+    type: Boolean
+    prop_name: "persist.audio.ess.status"
+    scope: Public
+    access: ReadWrite
+}
