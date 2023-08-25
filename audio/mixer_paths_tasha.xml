@@ -717,6 +717,18 @@
     <path name="deep-buffer-playback headphones">
         <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia1" value="1" />
     </path>
+    
+    <path name="deep-buffer-playback ess-headphones-hifi">
+        <ctl name="SEC_MI2S_RX" value="1" />
+    </path>
+    
+    <path name="deep-buffer-playback ess-headphones-hifi-advanced">
+        <ctl name="SEC_MI2S_RX" value="1" />
+    </path>
+    
+    <path name="deep-buffer-playback ess-headphones-hifi-aux">
+        <ctl name="SEC_MI2S_RX" value="1" />
+    </path>
 
     <path name="deep-buffer-playback speaker-and-headphones">
         <path name="deep-buffer-playback headphones" />
