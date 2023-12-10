@@ -1,0 +1,5 @@
+allow system_app audio_prop:property_service { set };
+allow system_app vendor_default_prop:property_service { set };
+allow system_app sysfs:dir { search read write open getattr };
+allow system_app sysfs:file { read write open getattr };
+allow system_app sysfs:lnk_file { read write open getattr };
