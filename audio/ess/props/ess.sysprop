@@ -15,3 +15,182 @@ prop {
     scope: Public
     access: ReadWrite
 }
+
+# DAC Panel Adjustable settings
+prop {
+    api_name: "ess_digitalfilter"
+    type: Integer
+    prop_name: "persist.audio.ess.digitalFilter"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_leftbalance"
+    type: Integer
+    prop_name: "persist.audio.ess.left_balance"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_rightbalance"
+    type: Integer
+    prop_name: "persist.audio.ess.right_balance"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_dop"
+    type: Boolean
+    prop_name: "persist.audio.ess.dop"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_dacmode"
+    type: Integer
+    prop_name: "persist.audio.ess.dacmode"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_avcvolume"
+    type: Integer
+    prop_name: "persist.audio.ess.avc_volume"
+    scope: Public
+    access: ReadWrite
+}
+
+# Dac panel's custom filter settings
+prop {
+    api_name: "ess_cfshape"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterShape"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfsymmetry"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterSymmetry"
+    scope: Public
+    access: ReadWrite
+}
+
+# Custom filter coefficients
+prop {
+    api_name: "ess_cfcoeff0"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff0"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff1"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff1"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff2"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff2"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff3"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff3"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff4"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff4"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff5"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff5"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff6"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff6"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff7"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff7"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff8"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff8"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff9"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff9"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff10"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff10"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff11"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff11"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff12"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff12"
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "ess_cfcoeff13"
+    type: Integer
+    prop_name: "persist.audio.ess.customFilterCoeff13"
+    scope: Public
+    access: ReadWrite
+}
