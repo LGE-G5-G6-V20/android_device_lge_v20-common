@@ -3,3 +3,6 @@
 
 # Quad DAC
 /(system_ext|system/system_ext)/bin/quad_dac    u:object_r:quaddac_exec:s0
+
+# Sysfs props
+/sys/kernel/es9218_dac/*      u:object_r:sysfs:s0
